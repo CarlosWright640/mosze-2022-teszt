@@ -17,5 +17,8 @@ int main()
     cout << "Atlag szamitasa: " << endl;
     atlag /= N_ELEMENTS;
     cout << "Atlag: " << atlag << endl;
+    
+    cout << "\nItt jart U3GK9P is!\n";
+    
   return 0;
 }
