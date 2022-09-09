@@ -1,26 +1,21 @@
 #include <iostream>
-
-constexpr int N_ELEMENTS = 100;
+using namespace std;
+const int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS];
-    std::cout << '1-100 ertekek duplazasa'
-    for (int i = 0;)
+    int *b = new int(N_ELEMENTS);
+    cout << "1-100 ertekek duplazasa."<<endl;
+    cout << "Ertek:"<<"\n";
+     float atlag=0.0;
+    for (int i = 0;i<N_ELEMENTS+1; i++)
     {
         b[i] = i * 2;
+        atlag += b[i];
+        cout<<i<<". szam: "<<b[i]<<"\n";
     }
-    for (int i = 0; i; i++)
-    {
-        std::cout << "Ertek:"
-    }    
-    std::cout << "Atlag szamitasa: " << std::endl;
-    int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)
-    {
-        atlag += b[i]
-    }
+    cout << "Atlag szamitasa: " << endl;
     atlag /= N_ELEMENTS;
-    std::cout << "Atlag: " << atlag << std::endl;
-    return 0;
+    cout << "Atlag: " << atlag << endl;
+  return 0;
 }
